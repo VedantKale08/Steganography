@@ -4,7 +4,7 @@
 
 
 body{
-    background: #eee;
+    background: #f2f3f7;
 }
 
 ::-webkit-scrollbar {
@@ -39,4 +39,18 @@ body{
     /* Internet Explorer 10+ */
     scrollbar-width: none !important;
     /* Firefox */
+}
+
+.loader {
+  height: 5px;
+  width: 100vw;
+  --c:no-repeat linear-gradient(#6100ee 0 0);
+  background: var(--c),var(--c),#d7b8fc;
+  background-size: 60% 100%;
+  animation: l16 3s infinite;
+}
+@keyframes l16 {
+  0%   {background-position:-150% 0,-150% 0}
+  66%  {background-position: 250% 0,-150% 0}
+  100% {background-position: 250% 0, 250% 0}
 }

@@ -1,7 +1,7 @@
 "use client"
+import DecodeImageFromImage from '@/components/Image-Image/DecodeImageFromImage';
+import EncodeImageToImage from '@/components/Image-Image/EncodImageToImage';
 import Tab from '@/components/Tab';
-import DecodeTextFromImage from '@/components/Text-Image/DecodeTextFromImage';
-import EncodeTextToImage from '@/components/Text-Image/EncodeTextToImage';
 import React, { useState } from 'react'
 
 function Page() {
@@ -17,8 +17,8 @@ function Page() {
         </Tab>
       </div>
 
-      {tab === 0 && <EncodeTextToImage />}
-      {tab === 1 && <DecodeTextFromImage />}
+      {tab === 0 && <EncodeImageToImage />}
+      {tab === 1 && <DecodeImageFromImage />}
     </div>
   );
 }
