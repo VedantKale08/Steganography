@@ -23,7 +23,7 @@ function Navbar() {
   ];
 
   return (
-    <div className="sticky top-0 shadow-md flex justify-between px-[300px] py-4 bg-white">
+    <div className="sticky top-0 shadow-md flex justify-between px-[300px] py-4 bg-white z-50">
       <p className="text-xl text-coral-red font-semibold">Steganography</p>
       <div className="flex gap-5">
         {navItems.map((item, index) => (
