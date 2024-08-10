@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 const poppins = Poppins({ subsets: ["latin"] , weight: "400"});
 
 export const metadata: Metadata = {
-  title: "Create Next App",
+  title: "Steganography",
   description: "Steganography",
 };
 

@@ -56,8 +56,8 @@ function EncodeImageToImage() {
           axios
             .post(process.env.NEXT_PUBLIC_BACKEND_URL + "/merge", formData)
             .then((response) => {
-              const base64String = response.data.encrypted_image;
-
+              setLoading(false);
+              const base64String = response.data.encrypted_image;              
               const convertedFile = base64ToFile(
                 base64String,
                 file.name.substring(0, file.name.indexOf(".")) + "_encrypted"
@@ -97,7 +97,7 @@ function EncodeImageToImage() {
         </button>
         <OutputImage file={outputFile} fileUrl={outputFileUrl} />
       </div>
-      {loading && <Loader />}
+    {loading && <Loader />}
     </div>
   );
 }
